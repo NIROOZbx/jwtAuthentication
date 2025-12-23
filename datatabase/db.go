@@ -13,7 +13,7 @@ var DB *gorm.DB
 func DbInit() {
 	var err error
 
-	dsn :="host=localhost user=postgres password=trees5000 dbname=task"
+	dsn :="host=localhost user=postgres password="" dbname=task"
 
 	DB,err=gorm.Open(postgres.Open(dsn),&gorm.Config{})
 
